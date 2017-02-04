@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Cez-tR-NVt">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Attribute View Controller-->
+        <scene sceneID="uIh-No-het">
+            <objects>
+                <viewController id="Cez-tR-NVt" customClass="GPAttributeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xcd-iw-Pr6"/>
+                        <viewControllerLayoutGuide type="bottom" id="BdK-LZ-bTV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zC6-Yd-ZEH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2y-6a-vDT">
+                                <rect key="frame" x="20" y="40" width="560" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utM-vE-owt">
+                                <rect key="frame" x="20" y="80" width="560" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRD-3A-R4M">
+                                <rect key="frame" x="240" y="285" width="120" height="30"/>
+                                <state key="normal" title="快点我哦" backgroundImage="3">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnClick:" destination="Cez-tR-NVt" eventType="touchUpInside" id="PVw-iw-Xm3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="A2y-6a-vDT" secondAttribute="trailing" constant="20" id="0oB-My-c2e"/>
+                            <constraint firstAttribute="trailing" secondItem="utM-vE-owt" secondAttribute="trailing" constant="20" id="1sg-e7-yPn"/>
+                            <constraint firstItem="A2y-6a-vDT" firstAttribute="top" secondItem="Xcd-iw-Pr6" secondAttribute="bottom" constant="20" id="FUV-gB-KJP"/>
+                            <constraint firstItem="A2y-6a-vDT" firstAttribute="leading" secondItem="zC6-Yd-ZEH" secondAttribute="leading" constant="20" id="Kj5-S6-XKH"/>
+                            <constraint firstItem="aRD-3A-R4M" firstAttribute="centerX" secondItem="zC6-Yd-ZEH" secondAttribute="centerX" id="b0P-RR-piT"/>
+                            <constraint firstItem="utM-vE-owt" firstAttribute="leading" secondItem="zC6-Yd-ZEH" secondAttribute="leading" constant="20" id="eej-Kr-I1h"/>
+                            <constraint firstItem="utM-vE-owt" firstAttribute="top" secondItem="A2y-6a-vDT" secondAttribute="bottom" constant="20" id="fEE-a2-lz6"/>
+                            <constraint firstItem="aRD-3A-R4M" firstAttribute="centerY" secondItem="zC6-Yd-ZEH" secondAttribute="centerY" id="iMK-QO-brU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="oneLabel" destination="A2y-6a-vDT" id="0jS-be-w5o"/>
+                        <outlet property="twoLabel" destination="utM-vE-owt" id="oTZ-KM-O5Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-hg-55y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="830" y="189"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="3" width="80" height="38"/>
+    </resources>
+</document>

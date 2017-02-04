@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="pictureCell" rowHeight="200" id="KGk-i7-Jjw" customClass="GPPictureTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lpe-eN-gyL" userLabel="标题">
+                        <rect key="frame" x="5" y="5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Ep-fY-w9Z" userLabel="右图">
+                        <rect key="frame" x="201" y="34" width="168" height="125"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsC-05-Z1c" userLabel="评论">
+                        <rect key="frame" x="270" y="170" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="qMa-0G-kqO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQu-h7-wmM" userLabel="时间">
+                        <rect key="frame" x="329" y="170" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="zOu-cZ-eYH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZKb-Ob-HV1" userLabel="左图">
+                        <rect key="frame" x="8" y="33" width="162" height="128"/>
+                    </imageView>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVx-40-RCA" userLabel="提示">
+                        <rect key="frame" x="334" y="15" width="48" height="53"/>
+                        <state key="normal" backgroundImage="icon_pic_count">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Lpe-eN-gyL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="42f-qO-RlC"/>
+                    <constraint firstItem="6Ep-fY-w9Z" firstAttribute="height" secondItem="ZKb-Ob-HV1" secondAttribute="height" constant="-3" id="4Ed-Jf-2KK"/>
+                    <constraint firstItem="ZVx-40-RCA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="9oU-LX-HU6"/>
+                    <constraint firstAttribute="bottom" secondItem="bQu-h7-wmM" secondAttribute="bottom" constant="8.5" id="ALc-rq-MXo"/>
+                    <constraint firstItem="6Ep-fY-w9Z" firstAttribute="width" secondItem="ZKb-Ob-HV1" secondAttribute="width" constant="6" id="Fvb-wX-zku"/>
+                    <constraint firstAttribute="trailing" secondItem="bQu-h7-wmM" secondAttribute="trailing" constant="19" id="Ggc-2v-7mB"/>
+                    <constraint firstAttribute="bottom" secondItem="RsC-05-Z1c" secondAttribute="bottom" constant="8.5" id="Kxa-Yy-Sxl"/>
+                    <constraint firstItem="Lpe-eN-gyL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="OPN-Yy-Q7b"/>
+                    <constraint firstItem="bQu-h7-wmM" firstAttribute="leading" secondItem="RsC-05-Z1c" secondAttribute="trailing" constant="17" id="Wjq-HC-2Dj"/>
+                    <constraint firstItem="RsC-05-Z1c" firstAttribute="top" secondItem="6Ep-fY-w9Z" secondAttribute="bottom" constant="11" id="Y2h-3k-uWX"/>
+                    <constraint firstItem="6Ep-fY-w9Z" firstAttribute="top" secondItem="ZKb-Ob-HV1" secondAttribute="top" constant="1" id="aDU-8D-Cl3"/>
+                    <constraint firstItem="ZKb-Ob-HV1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="eNW-5z-mBF"/>
+                    <constraint firstAttribute="trailing" secondItem="6Ep-fY-w9Z" secondAttribute="trailing" constant="21" id="jXD-08-sTO"/>
+                    <constraint firstItem="6Ep-fY-w9Z" firstAttribute="leading" secondItem="ZKb-Ob-HV1" secondAttribute="trailing" constant="31" id="maL-Z4-qTG"/>
+                    <constraint firstItem="bQu-h7-wmM" firstAttribute="top" secondItem="6Ep-fY-w9Z" secondAttribute="bottom" constant="11" id="oFo-Ia-VIN"/>
+                    <constraint firstItem="ZVx-40-RCA" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="pmD-a7-Yia"/>
+                    <constraint firstItem="ZKb-Ob-HV1" firstAttribute="top" secondItem="Lpe-eN-gyL" secondAttribute="bottom" constant="7.5" id="vaz-jj-J6K"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="TipsBtn" destination="ZVx-40-RCA" id="0My-om-uWS"/>
+                <outlet property="commentLabel" destination="RsC-05-Z1c" id="G1m-H4-rCr"/>
+                <outlet property="leftImageView" destination="ZKb-Ob-HV1" id="Jlw-0t-Q5T"/>
+                <outlet property="rightImageView" destination="6Ep-fY-w9Z" id="AUb-bN-bBW"/>
+                <outlet property="timeLabel" destination="bQu-h7-wmM" id="EYm-m9-iNb"/>
+                <outlet property="titleLabel" destination="Lpe-eN-gyL" id="HFh-sp-H5w"/>
+            </connections>
+            <point key="canvasLocation" x="330" y="209"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_pic_count" width="48" height="53"/>
+    </resources>
+</document>

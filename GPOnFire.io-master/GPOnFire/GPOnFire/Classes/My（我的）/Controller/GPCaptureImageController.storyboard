@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="heG-2a-RCm">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Capture Image Controller-->
+        <scene sceneID="4Qj-RB-xol">
+            <objects>
+                <viewController id="heG-2a-RCm" customClass="GPCaptureImageController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0lH-uF-7UF"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xz1-kR-rOW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J7C-5U-Cpb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UC4-sH-fKc">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QN6-UJ-4h5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Tke-9H-rTo"/>
+                                </constraints>
+                            </view>
+                            <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jyI-6J-gyw">
+                                <rect key="frame" x="0.0" y="450" width="600" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZhI-uN-1DI">
+                                        <rect key="frame" x="10" y="110" width="30" height="30"/>
+                                        <state key="normal" title="取消">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancleBtn:" destination="heG-2a-RCm" eventType="touchUpInside" id="Ims-KY-iX7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8w-9o-Jym">
+                                        <rect key="frame" x="560" y="110" width="30" height="30"/>
+                                        <state key="normal" title="使用">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="userBtn:" destination="heG-2a-RCm" eventType="touchUpInside" id="9ah-6S-WAZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="F5w-bG-QPe"/>
+                                    <constraint firstAttribute="trailing" secondItem="o8w-9o-Jym" secondAttribute="trailing" constant="10" id="Kmb-DF-SZK"/>
+                                    <constraint firstItem="ZhI-uN-1DI" firstAttribute="leading" secondItem="jyI-6J-gyw" secondAttribute="leading" constant="10" id="QkN-3i-cJ8"/>
+                                    <constraint firstAttribute="bottom" secondItem="o8w-9o-Jym" secondAttribute="bottom" constant="10" id="RXf-gg-9Nk"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZhI-uN-1DI" secondAttribute="bottom" constant="10" id="cbu-9N-GJJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="QN6-UJ-4h5" secondAttribute="trailing" id="3Ar-zM-pkk"/>
+                            <constraint firstItem="QN6-UJ-4h5" firstAttribute="top" secondItem="0lH-uF-7UF" secondAttribute="bottom" id="6Op-E1-QGU"/>
+                            <constraint firstItem="Xz1-kR-rOW" firstAttribute="top" secondItem="jyI-6J-gyw" secondAttribute="bottom" id="Hwk-h6-oYR"/>
+                            <constraint firstItem="jyI-6J-gyw" firstAttribute="leading" secondItem="J7C-5U-Cpb" secondAttribute="leading" id="gzj-a0-ZHY"/>
+                            <constraint firstAttribute="trailing" secondItem="jyI-6J-gyw" secondAttribute="trailing" id="lqY-jM-MJW"/>
+                            <constraint firstItem="QN6-UJ-4h5" firstAttribute="leading" secondItem="J7C-5U-Cpb" secondAttribute="leading" id="o9F-k8-xWS"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="selectImageView" destination="UC4-sH-fKc" id="V1S-lH-ND1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cH3-cx-W9Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="502" y="344"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Gk8-20-Aoh">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="ObO-S8-s4Q">
+            <objects>
+                <viewController id="Gk8-20-Aoh" customClass="GPDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7VR-Qi-qmE"/>
+                        <viewControllerLayoutGuide type="bottom" id="h0X-0s-DX3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y0e-mm-ltj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wzd-yH-2A7" customClass="GPContentView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="h0X-0s-DX3" firstAttribute="top" secondItem="wzd-yH-2A7" secondAttribute="bottom" id="0qB-lR-4HY"/>
+                            <constraint firstItem="wzd-yH-2A7" firstAttribute="leading" secondItem="Y0e-mm-ltj" secondAttribute="leading" id="Jqp-E4-PHG"/>
+                            <constraint firstItem="wzd-yH-2A7" firstAttribute="top" secondItem="Y0e-mm-ltj" secondAttribute="top" id="nJ6-pi-y8f"/>
+                            <constraint firstAttribute="trailing" secondItem="wzd-yH-2A7" secondAttribute="trailing" id="zzC-v8-PH3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentStrView" destination="wzd-yH-2A7" id="3Ay-JW-phu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7cl-Xh-SUM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="676" y="407"/>
+        </scene>
+    </scenes>
+</document>

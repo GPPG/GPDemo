@@ -1,0 +1,9 @@
+platform :ios, "9.0"
+
+pod "MJExtension"
+pod "SDWebImage"
+pod "SDCycleScrollView"
+pod "AFNetworking"
+pod "MJRefresh"
+pod "SVProgressHUD"
+
