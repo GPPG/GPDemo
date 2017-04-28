@@ -14,6 +14,7 @@
  */
 - (NSString *)ctime
 {
+    NSLog(@"服务器返回时间%@",_ctime);
     // 1.服务器返回的时间
     NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
     

@@ -970,7 +970,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/mac/Desktop/OnFire/GPOnFire.io/GPOnFire/GPOnFire/Classes/Main/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = GPOnFire/Classes/Main/PrefixHeader.pch;
 				INFOPLIST_FILE = GPOnFire/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GPYY.com.GPOnFire;
@@ -986,7 +986,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/mac/Desktop/OnFire/GPOnFire.io/GPOnFire/GPOnFire/Classes/Main/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = GPOnFire/Classes/Main/PrefixHeader.pch;
 				INFOPLIST_FILE = GPOnFire/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GPYY.com.GPOnFire;
